@@ -8,7 +8,7 @@ from profile_api import views
 # https://www.django-rest-framework.org/api-guide/routers/#defaultrouter
 router = DefaultRouter()
 router.register('hello-viewset', views.HelloViewSet, 'hello-viewset')
-
+router.register('profile', views.UserProfileViewSet)
 
 urlpatterns = [
     path('hello-view/', views.HelloApiView.as_view()),
